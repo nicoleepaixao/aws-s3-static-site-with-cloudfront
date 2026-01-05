@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AWS S3 + CloudFront Static Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Production-ready static website hosted on AWS S3 with CloudFront, OAC, HTTPS and CI/CD."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <h1>AWS S3 + CloudFront Static Site</h1>
+        <p class="subtitle">
+          Private S3 bucket · CloudFront · OAC · HTTPS · CI/CD
+        </p>
+      </header>
+
+      <section class="card">
+        <h2>Architecture Overview</h2>
+        <pre class="diagram">
+User
+  ↓
+Route 53 (DNS / ALIAS)
+  ↓
+CloudFront (HTTPS + CDN + WAF)
+  ↓
+Origin Access Control (OAC)
+  ↓
+Private S3 Bucket (static assets)
+        </pre>
+        <p>
+          This repository demonstrates how to host a static website on AWS
+          following modern best practices: private S3 bucket, CloudFront with
+          Origin Access Control (OAC), HTTPS via ACM and automated deployments
+          with cache invalidation.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>API Integration Example</h2>
+        <p>
+          Below, we simulate a simple API call using a configurable base URL.
+          In a real application, this would point to your backend
+          (API Gateway + Lambda, ALB + ECS/EKS, etc).
+        </p>
+
+        <div class="api-section">
+          <button id="call-api-btn">Call Demo API</button>
+          <pre id="api-result" class="code-block">
+Click "Call Demo API" to simulate a request...
+          </pre>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>
+          Built as a reference architecture for
+          <strong>static websites on AWS</strong>.
+        </p>
+      </footer>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
