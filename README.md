@@ -4,17 +4,23 @@
 
 ## Production-Ready Static Website Hosting with Best Practices
 
-**Updated: January 2, 2026**
+**Updated: January 14, 2026**
 
 [![Follow @nicoleepaixao](https://img.shields.io/github/followers/nicoleepaixao?label=Follow&style=social)](https://github.com/nicoleepaixao)
 [![Star this repo](https://img.shields.io/github/stars/nicoleepaixao/aws-s3-cloudfront-static-site?style=social)](https://github.com/nicoleepaixao/aws-s3-cloudfront-static-site)
+[![Medium Article](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://nicoleepaixao.medium.com/)
+
+<p align="center">
+  <a href="README-PT.md">🇧🇷</a>
+  <a href="README.md">🇺🇸</a>
+</p>
 
 </div>
 
 ---
 
 <p align="center">
-  <img src="img/aws-s3-static-site-with-cloudfront.png" alt="AWS Static Website Architecture" width="1200">
+  <img src="img/aws-s3-static-site-with-cloudfront.png" alt="AWS Static Website Architecture" width="1800">
 </p>
 
 ## **Overview**
@@ -63,7 +69,7 @@ Common mistakes in static website hosting:
 ### **High-Level Flow**
 
 <p align="center">
-  <img src="img/aws-s3-static-site-with-cloudfront.png" alt="AWS Static Website Architecture" width="800">
+  <img src="img/aws-s3-static-site-with-cloudfront.png" alt="AWS Static Website Architecture" width="1800">
 </p>
 
 </div>
@@ -584,19 +590,6 @@ For more details about AWS CloudFront, S3, and static website hosting, refer to:
 
 ---
 
-## **Future Enhancements**
-
-| **Feature** | **Description** | **Status** |
-|-------------|-----------------|------------|
-| Lambda@Edge | Request/response manipulation | Planned |
-| CloudFront Functions | Lightweight URL rewrites | Planned |
-| Multi-Region Failover | Route 53 health checks | Future |
-| Blue/Green Deployments | Separate distributions for testing | Future |
-| Cost Dashboard | CloudWatch metrics visualization | Planned |
-| Security Headers | Lambda@Edge for CSP, HSTS, etc. | In Development |
-
----
-
 ## **Connect & Follow**
 
 Stay updated with AWS best practices and modern web architectures:
@@ -621,6 +614,8 @@ This implementation follows AWS best practices as of December 2, 2025. AWS servi
 
 **Happy building modern web applications!**
 
-*Document last updated: January 2, 2026*
+*Document Created: January 2, 2026*
+
+Made with ❤️ by [Nicole Paixão](https://github.com/nicoleepaixao)
 
 </div>
